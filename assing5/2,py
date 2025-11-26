@@ -1,0 +1,34 @@
+num_students =int(input("Enter the number of students: "))
+percentages = []
+
+for i in range(1, num_students + 1):
+    print("Enter marks for Student:")
+    total = 0
+    
+    for j in range(1, 6):
+        marks = float(input("Subject marks:"))
+        total += marks
+    
+    percentage = (total / 500) * 100
+    percentages.append(percentage)
+    print("Percentage of Student",percentage)
+    
+
+average_percentage = sum(percentages) /num_students
+
+
+print(" All Students Percentages:")
+for i, p in enumerate(percentages, start=1):
+    print("Student",i)
+
+
+print("Average Percentage of all students:",average_percentage)
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+n = 10
+
+print('*' * n)
+
+for i in range(1, n - 1):
+    
+    print(' '* (n - i - 1) + '*')
+
+print('*' * n + '*')
